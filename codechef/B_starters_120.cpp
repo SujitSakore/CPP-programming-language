@@ -1,25 +1,22 @@
-//  Sub or Swp
+//  Valentine Gifts
 
 #include <bits/stdc++.h>
 using namespace std;
 
-int gcd(int a, int b){
-    while(b!=0){
-        int temp =b;
-        b=a%b;
-        a=temp;
-    }
-    return a;
-}
-int main(){
+int main() {
+	// your code goes here
     int sujit;
     cin>>sujit;
-    while(sujit--){
-        int x,y;
-        cin>>x>>y;
-        cout<<gcd(x,y)<<endl;
+    while(sujit !=0){
+        int sakore;
+        cin>>sakore;
+        if (sakore>=127){
+            cout<<"YES"<<endl;
+        }else{
+            cout<<"NO"<<endl;
+        }
+        sujit--;
     }
     return 0;
 }
-
 
